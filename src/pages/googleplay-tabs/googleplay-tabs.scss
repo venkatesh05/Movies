@@ -15,7 +15,7 @@ page-googleplay-tabs {
     .SwipedTabs-tabs ion-segment-button
     {
       border:none !important;
-      color:green!important;
+      color:color($colors,dark)!important;
       background-color:white!important;
         padding-left: 20px !important;
         padding-right: 20px !important;
@@ -28,6 +28,7 @@ page-googleplay-tabs {
 
     .SwipedTabs-tabs
     {
+        border-bottom: solid 1px #e6e6e6 !important;
         width: fit-content !important;
     }
 
@@ -38,12 +39,19 @@ page-googleplay-tabs {
 
     .tabsContent .scroll-content
     {
-        //overflow-x: scroll !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
     }
 
     .tabsContent
     {
-        height: 50px !important;
+        height: 30px !important;
+        background-color: #fff !important;
+    }
+
+    .toolbar-background-ios{
+        background-color: #fff;
+        border-width: 0px !important;
     }
 
     .segment-button
@@ -51,6 +59,10 @@ page-googleplay-tabs {
         max-width: initial !important;
         flex: auto !important;
         width: initial !important;
+    }
+    .toolbar-ios
+    {
+        padding: 0%;
     }
 }
 
