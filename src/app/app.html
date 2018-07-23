@@ -1,34 +1,30 @@
 <ion-menu [content]="nav">
     <ion-content class="menuContent">
-        <h2>Movies</h2>
-        <h5>Enjoy movie lovers</h5>
+        <h2 style="color: white;text-align: center">Movies</h2>
+        <p style="color: white;text-align: center">Enjoy movie lovers</p>
         <ion-list>
-            <button ion-item (click)="onLoad(tabsPage)">
+            <button ion-item (click)="onLoad(googleplayTabsPage)">
                 <ion-icon name="home" item-left></ion-icon>
                 Home
             </button>
-            <button ion-item (click)="onLoad(settingsPage)">
-                <ion-icon name="settings" item-left></ion-icon>
+            <button ion-item (click)="onLoad(playingPage)">
+                <ion-icon name="film" item-left></ion-icon>
                 Now Playing
             </button>
-            <button ion-item (click)="onLoad(settingsPage)">
-                <ion-icon name="settings" item-left></ion-icon>
-                Latest
-            </button>
-            <button ion-item (click)="onLoad(settingsPage)">
-                <ion-icon name="settings" item-left></ion-icon>
+            <button ion-item (click)="onLoad(popularPage)">
+                <ion-icon name="paper" item-left></ion-icon>
                 Popular
             </button>
-            <button ion-item (click)="onLoad(settingsPage)">
-                <ion-icon name="settings" item-left></ion-icon>
+            <button ion-item (click)="onLoad(upcomingPage)">
+                <ion-icon name="calendar" item-left></ion-icon>
                 Upcoming
             </button>
-            <button ion-item (click)="onLoad(settingsPage)">
-                <ion-icon name="settings" item-left></ion-icon>
+            <button ion-item (click)="onLoad(topratedPage)">
+                <ion-icon name="stats" item-left></ion-icon>
                 Top Rated
             </button>
         </ion-list>
     </ion-content>
 </ion-menu>
 
-<ion-nav [root]="rootPage" #nav></ion-nav>
+<ion-nav [root]="googleplayTabsPage" #nav></ion-nav>

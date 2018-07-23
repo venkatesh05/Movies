@@ -1,0 +1,61 @@
+page-toprated {
+    .noPadding, .scroll-content, .col{
+        padding: 0% !important;
+        margin-top: 1%;
+    }
+    .card-ios {
+        margin: 2px;
+        width: auto;
+    }
+    .card-content-ios {
+        padding: 4px 4px 20px;
+    }    
+
+    .card-md {
+        margin: 2px;
+        width: auto;
+    }
+    .card-content-md {
+        padding: 4px 4px 20px;
+    } 
+ 
+    .title {
+         text-overflow: clip !important;
+    }
+    
+     p {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+     }
+ 
+     .filters {
+ 
+         ion-col {
+             text-align: center;
+             font-size: 1.6rem;
+             line-height: 1.6rem;
+ 
+             ion-icon {
+                 color: #ccc;
+             }
+ 
+             &.col-with-arrow {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+         }
+ 
+         p {
+             color: #000;
+             margin: 0;
+             font-size: 1.6rem;
+             line-height: 1.6rem;
+         }
+ 
+         .selected {
+             font-weight: 700;
+         }
+     }
+}

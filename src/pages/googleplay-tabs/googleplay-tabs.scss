@@ -45,11 +45,15 @@ page-googleplay-tabs {
 
     .tabsContent
     {
-        height: 30px !important;
+        height: 35px !important;
         background-color: #fff !important;
     }
 
     .toolbar-background-ios{
+        background-color: #fff;
+        border-width: 0px !important;
+    }
+    .toolbar-background-md{
         background-color: #fff;
         border-width: 0px !important;
     }
@@ -63,6 +67,19 @@ page-googleplay-tabs {
     .toolbar-ios
     {
         padding: 0%;
+    }
+
+    .toolbar-md
+    {
+        padding: 0%;
+    }  
+
+    .moviesContent .content-ios{
+        position: inherit;
+    }
+
+    .moviesContent .content-md{
+        position: inherit;
     }
 }
 

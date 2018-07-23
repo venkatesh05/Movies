@@ -5,7 +5,7 @@
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Movies</ion-title>
+    <ion-title text-center>Movies</ion-title>
   </ion-navbar>
    <ion-toolbar>
       <ion-content  #MultiItemsScrollingTabs class="tabsContent">
@@ -21,29 +21,24 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content padding class="moviesContent">
 
-<ion-content padding>
 <ion-slides #SwipedTabsSlider  (ionSlideDrag)="animateIndicator($event)"
     (ionSlideDidChange)="updateIndicatorPosition()"
     (ionSlideWillChange)="scrollIndicatiorTab()"
     (panend)="updateIndicatorPositionOnTouchEnd()"
     [pager]="false">
-          <ion-slide>
-              <h1>Page 0 </h1>
+          <ion-slide >
+            <page-playing></page-playing>
           </ion-slide>
           <ion-slide>
-             <h1>Page 1 </h1>
+            <page-upcoming></page-upcoming>
           </ion-slide>
           <ion-slide>
-             <h1>Page 2 </h1>
+            <page-toprated></page-toprated>
           </ion-slide>
           <ion-slide>
-            <h1>Page 3 </h1>
+            <page-popular></page-popular>
           </ion-slide>
-          <ion-slide>
-            <h1>Page 4 </h1>
-          </ion-slide>
-          
-
     </ion-slides>
 </ion-content>

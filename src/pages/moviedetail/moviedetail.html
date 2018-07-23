@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ movie.title }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <ion-grid>
+          <ion-row>
+            <ion-col col-6><img src="{{this.imagePath+movie.poster_path}}"/></ion-col>
+            <ion-col col-6>
+              <p>{{movie.title}}</p>
+              <p>{{movie.release_date}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+</ion-content>
